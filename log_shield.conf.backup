@@ -1,0 +1,15 @@
+# Log paths
+ACCESS_LOG="/var/log/nginx/access.log"
+AUTH_LOG="/var/log/auth.log"
+
+# Security Settings
+CLEAR_BLACKLIST=true
+MAX_ATTEMPTS=10
+WHITELIST=("127.0.0.1" "твій_ip")
+
+# Telegram (use your lib)
+TG_TOKEN="YOUR_TOKEN"
+CHAT_ID="YOUR_ID"
+
+# Log
+LOG_FILE="log_shield.log"
