@@ -7,7 +7,7 @@ source "./src/tg_notify.sh"
 
 # Checks for variables
 [[ ! -f "$ACCESS_LOG" ]] && { echo "$(date '+%Y-%m-%d %H:%M:%S') [ERROR] The specified file [$ACCESS_LOG] not found." | tee -a "$LOG_FILE"; exit 1; }
-[[ ! -f "$AUTH_LOG" ]] && { echo "$(date '+%Y-%m-%d %H:%M:%S') [ERROR] The specified file [$ACCESS_LOG] not found." | tee -a "$LOG_FILE"; exit 1; }
+[[ ! -f "$AUTH_LOG" ]] && { echo "$(date '+%Y-%m-%d %H:%M:%S') [ERROR] The specified file [$AUTH_LOG] not found." | tee -a "$LOG_FILE"; exit 1; }
 
 # Check for blacklist
 if [[ "$CLEAR_BLACKLIST" == "true" ]]; then

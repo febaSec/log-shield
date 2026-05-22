@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+source "./colors.env"
+
 if [[ ! -d /app/data ]]; then
     echo "${RED}[ERROR] Missing /app/data directory.${NC}"
     echo "${CYAN}Please create local './data' directory before running docker compose.${NC}"
